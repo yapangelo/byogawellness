@@ -1,0 +1,35 @@
+@use "../../styles/partials/typography" as *;
+
+.home {
+    position: relative;
+
+    &__hero {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 2;
+    }
+
+    &__tagline {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        min-width: 22.5rem;
+        max-width: 22.5rem;
+    }
+
+    &__intro-greeting1 {
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1rem;
+        padding-top: 1rem;
+    }
+
+    &__intro-greeting2 {
+        font-style: italic;
+    }
+  }
+  
+  
