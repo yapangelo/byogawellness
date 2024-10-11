@@ -1,4 +1,4 @@
-@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/variables" as *;
 
 .header {
     display: flex;
@@ -7,7 +7,8 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    @include mobile-padding;
+    padding: 3rem 1rem;
+    background-color: rgba( $bywgreen, .2);
   
     &__hamburger {
       cursor: pointer;
@@ -15,6 +16,7 @@
       left: 1rem;
       z-index: 1001;
       transition: transform 0.5s ease; // Add smooth animation
+      margin: 1rem;
   
       &.open {
         transform: rotate(180deg); // Rotate the icon when it's open

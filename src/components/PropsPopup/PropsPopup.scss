@@ -1,0 +1,36 @@
+@use "../../styles/partials/variables" as *;
+
+.prop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($darkblue, 0.9);
+    color: white;
+    padding: 1.375rem;
+    z-index: 1000;
+
+    &__container {
+        color: white;
+        padding: 0 25px;
+      }
+      
+    &__cred {
+        font-weight: 900;
+      }
+
+    &__location {
+        font-weight: 200;
+      }
+
+    &__texts, &__title {
+        margin: 1rem 0;
+      }
+
+    &__close {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+      
+  }

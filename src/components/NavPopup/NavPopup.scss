@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-color: rgba($darkblue, 0.9);
   color: white;
   padding: 2rem;
@@ -22,6 +22,7 @@
   &__page {
     padding: 1rem 0;
     font-size: 2rem;
+    color: white;
     cursor: pointer;
   }
 }
