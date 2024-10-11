@@ -7,7 +7,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     background-color: rgba( $bywgreen, .2);
   
     &__hamburger {
@@ -24,7 +24,7 @@
     }
 
     &__logo {
-      position: absolute;
+      position: relative;
       left: 50%;
       transform: translateX(-50%);
       width: 150px;

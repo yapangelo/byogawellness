@@ -1,0 +1,32 @@
+@use "../../styles/partials/mixins" as *;
+
+.services {
+    color: white;
+    text-align: center;
+
+    &__yoga {
+        background-image: url("../../assets/images/services-yoga.jpg");
+
+        &-types {
+            padding: .75rem 0;
+        }
+
+        &-title {
+            padding: 5rem 0 1.813rem 0;
+        }
+    }
+
+    &__coaching {
+        background-image: url("../../assets/images/services-coaching.jpg");
+    }
+
+    &__yoga, &__coaching {
+        @include mobile-homepage-bg;
+        height: 50vh;
+        align-items: center;
+    }
+
+    &__yoga-container, &__coaching-container {
+        width: 14.375rem;
+    }
+}
