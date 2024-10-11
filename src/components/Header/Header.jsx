@@ -29,6 +29,7 @@ const Header = () => {
         <img src={logo} alt="logo" className="header__logo" />
         {isNavVisible && <NavPopUp onClose={handleCloseNav} />}
       </Link>
+      {isNavVisible && <NavPopUp closePopup={handleCloseNav} />}
     </header>
   );
 };
