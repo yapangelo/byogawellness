@@ -21,12 +21,16 @@
     }
 
     &__yoga, &__coaching {
-        @include mobile-homepage-bg;
+        @include mobile-hero-bg;
         height: 50vh;
         align-items: center;
     }
 
     &__yoga-container, &__coaching-container {
         width: 14.375rem;
+    }
+
+    &__link {
+        color: white;
     }
 }

@@ -1,4 +1,5 @@
 import "./Services.scss";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -6,7 +7,9 @@ const Services = () => {
       <section className="services__yoga">
         <div className="services__yoga-container">
           <h1 className="services__yoga-title">YOGA</h1>
-          <h2 className="services__yoga-types">YOGA THERAPY</h2>
+          <Link to={"/therapy"} className="services__link">
+            <h2 className="services__yoga-types">YOGA THERAPY</h2>
+          </Link>
           <h2 className="services__yoga-types">TEACHER TRAINING</h2>
           <h2 className="services__yoga-types">STUDIO CLASSES</h2>
         </div>

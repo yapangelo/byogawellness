@@ -30,7 +30,7 @@
     &__intro {
         background-image: url("../../assets/images/home-greeting.jpg");
         padding: 20rem 0 4.75rem 0;
-        @include mobile-homepage-bg;
+        @include mobile-hero-bg;
 
         &-greeting1, &-greeting2 {
             font-weight: 200;
@@ -57,7 +57,7 @@
 
     &__creds {
         background-image: url("../../assets/images/home-credentials.jpg");
-        @include mobile-homepage-bg;
+        @include mobile-hero-bg;
         justify-content: flex-start;
         padding: 11.7rem 0 16.2rem 2rem;
 
