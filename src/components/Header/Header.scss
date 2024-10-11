@@ -1,15 +1,33 @@
+@use "../../styles/partials/variables" as *;
 
 .header {
     display: flex;
-    padding: 1.5rem 1rem;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 1rem;
+    background-color: rgba( $bywgreen, .2);
+  
+    &__hamburger {
+      cursor: pointer;
+      position: absolute;
+      left: 1rem;
+      z-index: 1001;
+      transition: transform 0.5s ease; // Add smooth animation
+      margin: 1rem;
+  
+      &.open {
+        transform: rotate(180deg); // Rotate the icon when it's open
+      }
+    }
 
     &__logo {
-        width: 150px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
     }
-    
-}
-
-.a {
-    color: transparent;
-}
+  }
+  

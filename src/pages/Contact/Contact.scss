@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.contact {
+    background-image: url("../../assets/images/contact-hero.jpg");
+    @include mobile-hero-bg;
+    background-position: -35vh;
+
+    &__title {
+        padding: 13rem 0;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 2rem 3rem;
+        
+        &-tagline {
+            color: $bywblue;
+            padding: 2rem 0;
+        }
+    }
+}

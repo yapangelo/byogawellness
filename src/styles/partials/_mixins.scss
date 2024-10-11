@@ -1,0 +1,12 @@
+@mixin mobile-hero-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+@mixin default-transition {
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    
+}

@@ -1,0 +1,79 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+
+.home {
+
+    &__hero {
+        text-align: center;
+
+        &-background {
+            position: absolute;
+            z-index: 1;
+        }
+
+        &-text-container {
+            position: absolute;
+            top: 20rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2;
+        }
+
+        &-tagline {
+            color: white;
+            margin-bottom: 1rem;
+            min-width: 22.5rem;
+            max-width: 22.5rem;
+        }
+    }
+
+    &__intro {
+        background-image: url("../../assets/images/home-greeting.jpg");
+        padding: 20rem 0 4.75rem 0;
+        @include mobile-hero-bg;
+
+        &-greeting1, &-greeting2 {
+            font-weight: 200;
+            font-style: italic;
+            line-height: 2rem;
+            color: white;
+        }
+        
+        &-greeting2 {
+            font-weight: 700;
+            padding-left: 1.5rem;
+        }
+
+        &-text-container {
+            width: 18.7rem;
+        }
+
+        &-button {
+            position: relative;
+            left: 25%;
+        }
+
+    }
+
+    &__creds {
+        background-image: url("../../assets/images/home-credentials.jpg");
+        @include mobile-hero-bg;
+        justify-content: flex-start;
+        padding: 11.7rem 0 16.2rem 2rem;
+
+        &-item {
+            color: white;
+            padding: 3rem 0;
+            @include default-transition;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+  }
+  
+  

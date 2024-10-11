@@ -1,0 +1,17 @@
+@use "../../styles/partials/mixins" as *;
+
+.about {
+    background-image: url("../../assets/images/about-hero.jpg");
+    @include mobile-hero-bg;
+    color: white;
+    height: 100vh;
+    align-items: center;
+
+    &__container {
+        padding: 1rem 2rem;
+    }
+
+    &__paragraph {
+        padding: .75rem 0;
+    }
+}
