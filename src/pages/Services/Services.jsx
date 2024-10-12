@@ -10,8 +10,12 @@ const Services = () => {
           <Link to={"/therapy"} className="services__link">
             <h2 className="services__yoga-types">YOGA THERAPY</h2>
           </Link>
-          <h2 className="services__yoga-types">TEACHER TRAINING</h2>
-          <h2 className="services__yoga-types">STUDIO CLASSES</h2>
+          <Link to={"/training"} className="services__link">
+            <h2 className="services__yoga-types">TEACHER TRAINING</h2>
+          </Link>
+          <Link to={"/classes"} className="services__link">
+            <h2 className="services__yoga-types">STUDIO CLASSES</h2>
+          </Link>
         </div>
       </section>
       <section className="services__coaching">

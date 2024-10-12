@@ -11,10 +11,6 @@
     
     &--primary {
         background-color: $bywblue;
-        @include default-transition;
-        
-        &:hover {
-            background-color: $bywgreen;
-        }
+        @include default-transition-buttons;
     }
 }

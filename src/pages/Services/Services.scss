@@ -9,6 +9,7 @@
 
         &-types {
             padding: .75rem 0;
+            @include default-transition-links;
         }
 
         &-title {

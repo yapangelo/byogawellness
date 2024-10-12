@@ -26,9 +26,10 @@ const Header = () => {
         onClick={handleHamburgerClick}
       />
       <Link to={"/"}>
-        <img src={logo} alt="logo" className="header__logo" />
-        {isNavVisible && <NavPopUp onClose={handleCloseNav} />}
+        <img src={logo} alt="logo" className="header__logo" />{" "}
       </Link>
+      {isNavVisible && <NavPopUp onClose={handleCloseNav} />}
+
       {isNavVisible && <NavPopUp closePopup={handleCloseNav} />}
     </header>
   );
