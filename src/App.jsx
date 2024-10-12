@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import YogaTherapy from "./pages/YogaTherapy/YogaTherapy";
 import TeacherTraining from "./pages/TeacherTraining/TeacherTraining";
 import StudioClasses from "./pages/StudioClasses/StudioClasses";
+import WellnessCoaching from "./pages/WellnessCoaching/WellnessCoaching";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/therapy" element={<YogaTherapy />} />
         <Route path="/training" element={<TeacherTraining />} />
         <Route path="/classes" element={<StudioClasses />} />
+        <Route path="/coaching" element={<WellnessCoaching />} />
       </Routes>
     </BrowserRouter>
   );
