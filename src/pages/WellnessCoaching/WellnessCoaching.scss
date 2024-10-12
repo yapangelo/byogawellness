@@ -1,0 +1,54 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.coaching {
+    padding: 6rem 0 25rem 0;
+    background-image: url("../../assets/images/coaching-hero.jpg");
+    @include mobile-hero-bg;
+
+    &__copy {
+        margin: 2rem;
+
+        &-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+
+            & li {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__quote {
+        border-left: 8px solid $grey;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+
+    &__bundles {
+        margin: 0 2rem 2rem 2rem;
+
+        &-title {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        &-desc {
+            font-weight: bold;
+            padding-bottom: .5rem;
+        }
+
+        &-container {
+            padding: .5rem 0;
+        }
+
+        &-name {
+            font-weight: 900;
+        }
+
+        &-duration {
+            font-weight:100;
+            font-style: italic;
+        }
+    }
+}

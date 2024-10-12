@@ -20,7 +20,9 @@ const Services = () => {
       </section>
       <section className="services__coaching">
         <div className="services__coaching-container">
-          <h1 className="services__coaching-title">WELLNESS COACHING</h1>
+          <Link to={"/coaching"} className="services__link">
+            <h1 className="services__coaching-title">WELLNESS COACHING</h1>
+          </Link>
         </div>
       </section>
     </div>
