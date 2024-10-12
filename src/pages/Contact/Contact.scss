@@ -4,7 +4,6 @@
 .contact {
     background-image: url("../../assets/images/contact-hero.jpg");
     @include mobile-hero-bg;
-    background-position: -35vh;
 
     &__title {
         padding: 13rem 0;

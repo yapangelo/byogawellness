@@ -64,7 +64,7 @@ export const yogaEducationData = [
     location: "With Rachel Scott, Vancouver, CA",
   },
   {
-    cred: "Over 50hrs of Various Yoga Workships",
+    cred: "Over 50hrs of Various Yoga Workshops",
     location: "Philippines, Hongkong, New York, Vancouver",
   },
 ];

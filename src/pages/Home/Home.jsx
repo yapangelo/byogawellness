@@ -48,10 +48,12 @@ const Home = () => {
               "As a Yoga Therapist C-AIYT candidate, I'm equipped to support your healing journey. I strive to serve by sharing my knowledge and promoting mindfulness. Join me to discover a mindful lifestyle.",
             ]}
           />
-          <Button
-            text="More About Me"
-            className="home__intro-button button--primary"
-          />
+          <Link to={"/about"}>
+            <Button
+              text="More About Me"
+              className="home__intro-button button--primary"
+            />
+          </Link>
         </div>
       </section>
 

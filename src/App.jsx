@@ -6,6 +6,8 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import YogaTherapy from "./pages/YogaTherapy/YogaTherapy";
+import TeacherTraining from "./pages/TeacherTraining/TeacherTraining";
+import StudioClasses from "./pages/StudioClasses/StudioClasses";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/therapy" element={<YogaTherapy />} />
+        <Route path="/training" element={<TeacherTraining />} />
+        <Route path="/classes" element={<StudioClasses />} />
       </Routes>
     </BrowserRouter>
   );
