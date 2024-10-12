@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins" as *;
+
+.training {
+
+    &__hero {
+        padding: 7.75rem 0;
+        background-image: url("../../assets/images/training-hero.PNG");
+        @include mobile-hero-bg;
+
+        &-title {
+        @include page-title-withgreybg;
+        }
+    }
+
+    &__copy {
+        margin: 2rem;
+
+        &-paragraph {
+            padding: 1rem 0;
+        }
+    }
+}

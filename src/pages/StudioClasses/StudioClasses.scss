@@ -1,0 +1,73 @@
+@use "../../styles/partials/mixins" as *;
+
+.studioclasses {
+    &__hero {
+        padding: 7.75rem 0;
+        background-image: url("../../assets/images/classes-hero.jpg");
+        @include mobile-hero-bg;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+        @include page-title-withgreybg;
+        }
+    }
+
+    &__copy {
+        margin: 2rem 2rem 0 2rem;
+
+        &-heading {
+            font-weight: 900;
+            margin-top: 1rem;
+        }
+
+        &-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        &-paragraph {
+            margin-top: 1rem;
+        }
+    }
+
+    &__schedule {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        &-day, &-time {
+            font-weight: 900;
+        }
+
+        &-day {
+            width: 45px;
+        }
+
+        &-title {
+            text-align: center;
+            margin: 2rem 0 1rem 0;
+        }
+
+        &-table {
+            width: 100%;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        &-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid black;
+        }
+
+        &-details-container {
+            padding-bottom: .25rem;
+            text-align: left;
+            width: 180px;
+        }
+    }
+}

@@ -58,19 +58,13 @@
     &__creds {
         background-image: url("../../assets/images/home-credentials.jpg");
         @include mobile-hero-bg;
-        justify-content: flex-start;
+        align-items: flex-start;
         padding: 11.7rem 0 16.2rem 2rem;
 
         &-item {
             color: white;
             padding: 3rem 0;
-            @include default-transition;
-
-            &:hover {
-                transform: scale(1.05);
-                cursor: pointer;
-            }
-            
+            @include default-transition-links;
         }
     }
 
