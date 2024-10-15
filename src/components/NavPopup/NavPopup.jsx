@@ -27,7 +27,7 @@ const NavPopup = ({ closePopup }) => {
             <Link to="/therapy" onClick={handleLinkClick}>
               <p className="navpopup__page-item">YOGA THERAPY</p>
             </Link>
-            <Link to="training" onClick={handleLinkClick}>
+            <Link to="/training" onClick={handleLinkClick}>
               <p className="navpopup__page-item">TEACHER TRAINING</p>
             </Link>
             <Link to="/classes" onClick={handleLinkClick}>
