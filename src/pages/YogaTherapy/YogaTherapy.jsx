@@ -28,15 +28,15 @@ const YogaTherapy = () => {
           <li>Tailored support for seniors</li>
         </ul>
 
-        <p className="therapy__copy-heading">
-          I specialize in yoga therapy for:
-        </p>
+        <p className="therapy__copy-heading">Modalities include:</p>
         <ul className="therapy__copy-list">
-          <li>Stress management & nervous system regulation</li>
-          <li>Enhancing balance, strength, & mobility</li>
-          <li>Pain management & relief</li>
-          <li>Embodiment practices</li>
-          <li>Tailored support for seniors</li>
+          <li>Yoga Postures & Intentional Movements</li>
+          <li>Breathing Exercises & Guided Meditation</li>
+          <li>Mindfulness Practices</li>
+          <li>Chair & Adaptive Yoga</li>
+          <li>Myofascial Release</li>
+          <li>Integrated Systems Model (ISM)</li>
+          <li>Reiki</li>
         </ul>
 
         <p className="therapy__copy-paragraph">
