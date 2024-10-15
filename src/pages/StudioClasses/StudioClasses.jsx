@@ -21,38 +21,37 @@ const StudioClasses = () => {
       </section>
 
       <section className="studioclasses__schedule">
-        <h2 className="studioclasses__schedule-title">STUDIO CLASS SCHEDULE</h2>
-        <table className="studioclasses__schedule-table">
-          <tbody>
-            {classScheduleData.map((classItem, index) => (
-              <tr className="studioclasses__schedule-row" key={index}>
-                <td className="studioclasses__schedule-date">
-                  <p className="studioclasses__schedule-day">{classItem.day}</p>
-                </td>
-                <td className="studioclasses__schedule-details">
-                  {classItem.details.map((detail, idx) => (
-                    <div
-                      className="studioclasses__schedule-details-container"
-                      key={idx}
-                    >
+        <h2 className="studioclasses__schedule-title">STUDIO CLASSES</h2>
+        {classScheduleData.map((classItem, index) => (
+          <div className="studioclasses__schedule-table" key={index}>
+            <p className="studioclasses__schedule-day">{classItem.day}</p>
+            <div className="studioclasses__schedule-container">
+              {classItem.details.map((detail, idx) => (
+                <>
+                  <div className="studioclasses__schedule-details" key={idx}>
+                    <div className="studioclasses__details-container">
                       <p className="studioclasses__schedule-time">
                         {detail.time}
                       </p>
-                      <p className="studioclasses__schedule-location">
+                      <p className="studioclasses__schedule-class">
                         {detail.location}
                       </p>
                     </div>
-                  ))}
-                </td>
-                <td>
-                  <Button text="Book Now" className="button--primary" />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                    <a href={detail.link} target="_blank">
+                      <Button
+                        text="Book Here"
+                        className="button--primary studioclasses__button"
+                      />
+                    </a>
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
     </div>
   );
 };
+
 export default StudioClasses;

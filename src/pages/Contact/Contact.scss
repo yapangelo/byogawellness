@@ -1,5 +1,6 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .contact {
     background-image: url("../../assets/images/contact-hero.jpg");
@@ -16,6 +17,43 @@
         &-tagline {
             color: $bywblue;
             padding: 2rem 0;
+        }
+    }
+
+    &__form {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+
+        &-field {
+
+            & input, textarea {
+                @include font-family;
+                font-size: 1rem;
+                margin: .5rem 0;
+                padding: 1rem .25rem;
+                width: 100%;
+                height: 1.5rem;
+                overflow: hidden;
+                resize: none;
+                box-sizing: border-box;
+
+                &:focus {
+                    border: 1px solid $bywblue;
+                    outline: none;
+                  }
+            
+                  &::placeholder {
+                    @include font-family;
+                    font-size: 1rem;
+                    color: #999;
+                    font-style: italic;
+                  }
+            }
+
+            & textarea {
+                height: 10rem;
+            }
         }
     }
 }

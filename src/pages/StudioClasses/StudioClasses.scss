@@ -32,42 +32,40 @@
     }
 
     &__schedule {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        padding: 1rem 2rem;
 
         &-day, &-time {
             font-weight: 900;
         }
-
-        &-day {
-            width: 45px;
-        }
-
-        &-title {
-            text-align: center;
-            margin: 2rem 0 1rem 0;
-        }
-
-        &-table {
-            width: 100%;
-            padding: 0 2rem 2rem 2rem;
-        }
-
-        &-row {
-            width: 100%;
+        
+        &-details {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 20rem;
+        }
+
+        &-table {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 1rem 0;
             border-bottom: 1px solid black;
         }
 
-        &-details-container {
-            padding-bottom: .25rem;
-            text-align: left;
-            width: 180px;
+        &-title {
+            text-align: center;
+            padding: 1rem 0;
         }
     }
+
+    &__button {
+        margin: .25rem 0;
+    }
 }
+
+a {
+    text-decoration: none;
+    color: inherit; // Ensures the button keeps its styling
+  }
+  

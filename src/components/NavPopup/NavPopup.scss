@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($darkblue, 0.9);
+  background-color: rgba($darkblue, .95);
   color: white;
   padding: 2rem;
   z-index: 1000;
@@ -24,5 +24,11 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
+
+    &-item {
+      text-align: center;
+      padding: .5rem 0;
+      color: white;
+    }
   }
 }
