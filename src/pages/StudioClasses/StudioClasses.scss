@@ -37,12 +37,17 @@
         &-day, &-time {
             font-weight: 900;
         }
+
+        &-day {
+            width: 3rem;
+            margin-right: 1rem;
+        }
         
         &-details {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 20rem;
+            width: 18.75rem;
         }
 
         &-table {
