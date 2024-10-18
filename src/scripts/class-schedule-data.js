@@ -25,7 +25,7 @@ export const classScheduleData = [
       {
         time: "5:30pm",
         location: "Flow - Local Health Clinic",
-        link: "https://localhealth.janeapp.com/locations/local-health-integrative-clinic/book#/therapeutic-yoga",
+        link: "https://localyoga.punchpass.com/passes?fbclid=IwY2xjawF-wmhleHRuA2FlbQIxMAABHQnczCc-mQE9YYp7I602NbVZU5nBXVmkdDpj15YbaM5CNHGJGJF_5CXoMw_aem_siMKRyvcAxBAnuIEobk8Ow",
       },
       {
         time: "8:00pm",
