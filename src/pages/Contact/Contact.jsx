@@ -24,6 +24,8 @@ const Contact = () => {
           setPopupMessage("Email sent successfully!"); // Success message
           setPopupType("success"); // Set popup type to success
           setShowPopup(true); // Show the popup
+
+          form.current.reset();
         },
         (error) => {
           setPopupMessage("Failed to send the email. Please try again."); // Error message
