@@ -1,45 +1,46 @@
 import "./Contact.scss";
-import emailjs from "emailjs-com";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Button from "../../components/Button/Button";
+import React, { useRef, useState } from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
+  const [popupType, setPopupType] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .send(
-        "byogawellness_8yw32q7", // Replace with your Service ID
-        "template_j3l8bsq", // Replace with your Template ID
-        formData,
-        "bLjCQXrliXf0Azc-C" // Replace with your Public Key
+      .sendForm(
+        "byogawellness_8yw32q7", // Service ID
+        "template_j3l8bsq", // Template ID
+        form.current,
+        "bLjCQXrliXf0Azc-C" // Public Key
       )
-
       .then(
         (result) => {
-          alert("Email sent successfully!");
-          setFormData({ name: "", email: "", message: "" });
+          setPopupMessage("Email sent successfully!"); // Success message
+          setPopupType("success"); // Set popup type to success
+          setShowPopup(true); // Show the popup
         },
         (error) => {
-          alert("Error sending email");
+          setPopupMessage("Failed to send the email. Please try again."); // Error message
+          setPopupType("error"); // Set popup type to error
+          setShowPopup(true); // Show the popup
         }
       );
   };
+
+  React.useEffect(() => {
+    if (showPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(false);
+      }, 3000); // Hide after 3 seconds
+      return () => clearTimeout(timer); // Clear timer if the component unmounts
+    }
+  }, [showPopup]);
 
   return (
     <>
@@ -55,48 +56,39 @@ const Contact = () => {
         <p className="contact__text-email">byogawellness@gmail.com</p>
       </div>
 
-      <form className="contact__form" onSubmit={handleSubmit}>
-        <div className="contact__form-field">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Name"
-            required
-          />
-        </div>
-
-        <div className="contact__form-field">
-          <input
-            type="text"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Email"
-          />
-        </div>
-
-        <div className="contact__form-field">
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Write message here..."
-            required
-          />
-        </div>
+      <form ref={form} onSubmit={sendEmail} className="contact__form">
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Name"
+          className="contact__form-name"
+        />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Email"
+          className="contact__form-email"
+        />
+        <textarea
+          name="message"
+          placeholder="Type message here"
+          className="contact__form-message"
+        />
 
         <Button
           type="submit"
           text="Submit"
+          value="Send"
           className="button--primary contact__form-button"
         />
       </form>
+
+      {/* Popup Notification */}
+      {showPopup && (
+        <div className={`popup ${popupType}`}>
+          <p>{popupMessage}</p>
+        </div>
+      )}
     </>
   );
 };
