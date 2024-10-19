@@ -19,6 +19,20 @@ const Header = () => {
 
   return (
     <header className="header">
+      <ul className="header__nav">
+        <Link to="/">
+          <li className="header__nav-li">Home</li>
+        </Link>
+        <Link to="/services">
+          <li className="header__nav-li">Services</li>
+        </Link>
+        <Link to="/about">
+          <li className="header__nav-li">About</li>
+        </Link>
+        <Link to="/contact">
+          <li className="header__nav-li">Contact</li>
+        </Link>
+      </ul>
       <img
         src={isNavVisible ? close : hamburger}
         alt="nav"

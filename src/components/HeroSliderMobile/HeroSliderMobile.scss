@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .slider {
     position: relative;
     overflow: hidden;
@@ -17,6 +19,10 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+
+    @include desktop-1280 {
+      
     }
   }
   

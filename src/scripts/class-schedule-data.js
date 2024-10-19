@@ -15,7 +15,7 @@ export const classScheduleData = [
       {
         time: "6:15pm",
         location: "Vinyasa - ODY",
-        link: "https://opendooryoga.bc.ca/schedule/",
+        link: "https://opendoor.perfectmind.com/4133/Contacts/BookMe4?widgetId=1c8656b0-867b-4641-ae6d-8a99488ac1c3&embed=true",
       },
     ],
   },
@@ -40,7 +40,7 @@ export const classScheduleData = [
       {
         time: "4:30pm",
         location: "Vinyasa - ODY",
-        link: "https://opendooryoga.bc.ca/schedule/",
+        link: "https://opendoor.perfectmind.com/4133/Contacts/BookMe4?widgetId=1c8656b0-867b-4641-ae6d-8a99488ac1c3&embed=true",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const classScheduleData = [
       {
         time: "5:00pm",
         location: "Vinyasa - ODY",
-        link: "https://opendooryoga.bc.ca/schedule/",
+        link: "https://opendoor.perfectmind.com/4133/Contacts/BookMe4?widgetId=1c8656b0-867b-4641-ae6d-8a99488ac1c3&embed=true",
       },
     ],
   },
