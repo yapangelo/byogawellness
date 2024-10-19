@@ -7,7 +7,7 @@ import img4 from "../../assets/images/mobile-hero4.jpg";
 
 const images = [img1, img2, img3, img4];
 
-const HeroSlider = () => {
+const HeroSliderMobile = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -36,4 +36,4 @@ const HeroSlider = () => {
   );
 };
 
-export default HeroSlider;
+export default HeroSliderMobile;

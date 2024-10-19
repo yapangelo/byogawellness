@@ -6,12 +6,48 @@
     color: white;
     height: 100vh;
     align-items: center;
+    @include desktop-1280 {
+        background-image: none;
+        align-items: flex-end;
+        margin-right: 2rem;
+        width: 50%;
+    }
+
+    &__image {
+        display: none;
+        @include desktop-1280 {
+            display: flex;
+            width: 50%;
+            border-radius: 1rem;
+        }
+    }
 
     &__container {
         padding: 1rem 2rem;
+        @include desktop-1280 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            padding: 0 5rem 0 0;
+            // justify-content: flex-start;
+        }
     }
 
     &__paragraph {
         padding: .75rem 0;
+    }
+
+    &__page-container {
+        @include desktop-1280 {
+        display: flex;
+        }
+    }
+
+    @include desktop-1280 {
+        &__title {
+            position: absolute;
+            padding-right: 2rem;
+        }
     }
 }

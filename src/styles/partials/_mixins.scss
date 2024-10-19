@@ -33,3 +33,11 @@
         background-color: $bywgreen;
     }
 }
+
+// media queries
+
+@mixin desktop-1280 {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}

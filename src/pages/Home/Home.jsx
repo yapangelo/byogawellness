@@ -1,9 +1,10 @@
 import "./Home.scss";
 import HeroSliderMobile from "../../components/HeroSliderMobile/HeroSliderMobile";
+import HeroSliderDesktop from "../../components/HeroSliderDesktop/HeroSliderDesktop";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 import TextBox from "../../components/TextBox/TextBox";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropsPopup from "../../components/PropsPopup/PropsPopup";
 import {
   credentialsData,
@@ -12,6 +13,17 @@ import {
 } from "../../scripts/props-data";
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1279);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 1279);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [visiblePopup, setVisiblePopup] = useState(null);
 
   const handleOpenPopup = (popupType) => {
@@ -33,7 +45,11 @@ const Home = () => {
             <Button text="Start Your Journey" className="button--primary" />
           </Link>
         </div>
-        <HeroSliderMobile className="home__hero-background" />
+        {isMobile ? (
+          <HeroSliderMobile className="home__hero-background" />
+        ) : (
+          <HeroSliderDesktop />
+        )}
       </section>
 
       <section className="home__intro">

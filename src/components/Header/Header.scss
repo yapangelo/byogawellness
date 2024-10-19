@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header {
     display: flex;
@@ -21,6 +22,10 @@
       &.open {
         transform: rotate(180deg); // Rotate the icon when it's open
       }
+
+      @include desktop-1280 {
+        display: none;
+      }
     }
 
     &__logo {
@@ -28,6 +33,28 @@
       left: 50%;
       transform: translateX(-50%);
       width: 150px;
+    }
+
+    &__nav {
+      list-style: none;
+      display: none;
+      color: $bywgreen;
+      position: absolute;
+      left: 1rem;
+
+      &-li {
+        padding: 0 1rem;
+
+        &:hover {
+          color: white;
+          cursor: pointer;
+          transform: scale(1.1);
+        }
+      }
+
+      @include desktop-1280 {
+        display: flex;
+      }
     }
   }
   

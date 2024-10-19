@@ -15,10 +15,18 @@
         &-title {
             padding: 5rem 0 1.813rem 0;
         }
+
+        @include desktop-1280 {
+            background-image: url("../../assets/images/services-yoga-desktop.jpg");
+        }
     }
 
     &__coaching {
         background-image: url("../../assets/images/services-coaching.jpg");
+
+        @include desktop-1280 {
+            background-image: url("../../assets/images/services-coaching-desktop.jpg")
+        }
     }
 
     &__yoga, &__coaching {

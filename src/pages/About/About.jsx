@@ -1,10 +1,12 @@
 import "./About.scss";
+import aboutpic from "../../assets/images/about-hero.jpg";
 
 const About = () => {
   return (
-    <>
+    <section className="about__page-container">
       <div className="about">
         <h1 className="about__title">ABOUT ME</h1>
+        <img src={aboutpic} alt="bernadette" className="about__image" />
       </div>
       <div className="about__container">
         <p className="about__paragraph">
@@ -31,12 +33,12 @@ const About = () => {
           health and wellness.
         </p>
         <p className="about__paragraph">
-          I am currently completing my practicum in Yoga Therapy at the
-          Vancouver School of Healing Arts. This program continues to deepen my
-          ability to support your healing journey using a variety of therapeutic
-          yoga tools. As I continue to grow as a yoga teacher, wellness
-          advocate, and individual, I am more inspired than ever to serve you
-          through the transformative practice of mindfulness.
+          I am currently completing my case study research in Yoga Therapy at
+          the Vancouver School of Healing Arts. This program continues to deepen
+          my ability to support your healing journey using a variety of
+          therapeutic yoga tools. As I continue to grow as a yoga teacher,
+          wellness advocate, and individual, I am more inspired than ever to
+          serve you through the transformative practice of mindfulness.
         </p>
         <p className="about__paragraph">
           I am especially passionate about supporting the community,
@@ -51,7 +53,7 @@ const About = () => {
           Let’s explore together ways to achieve a mindful lifestyle.
         </p>
       </div>
-    </>
+    </section>
   );
 };
 
