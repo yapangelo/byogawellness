@@ -2,12 +2,21 @@
 
 .therapy {
 
+    @include desktop-1280 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     &__hero {
         padding: 7.75rem 0 2rem 0;
         background-image: url("../../assets/images/therapy-hero.jpg");
         @include mobile-hero-bg;
         flex-direction: column;
         align-items: center;
+        @include desktop-1280 {
+            background-image: none;
+            padding: 0;
+        }
 
         &-title {
         @include page-title-withgreybg;
@@ -15,11 +24,38 @@
     
         &-text {
             margin: 2rem 2rem 0 2rem;
+            @include desktop-1280 {
+                margin: 0;
+                width: 75%;
+                margin-top: 1rem;
+            }
         }
+
+        &-image {
+            display: none;
+            @include desktop-1280 {
+                display: flex;
+                width: 50%;
+            }
+        }
+
+        &-container {
+            @include desktop-1280 {
+                width: 50%;
+            }
+        }
+    }
+
+    &__yoga {
+        display: flex;
     }
 
     &__copy {
         margin: 2rem;
+        @include desktop-1280 {
+            margin: auto;
+            width: 72%;
+        }
 
         &-heading {
             font-weight: 900;
@@ -34,18 +70,36 @@
         &-paragraph {
             margin-top: 1rem;
         }
+
+        &--end {
+            @include desktop-1280 {
+                display: none;
+            }
+        }
     }
 
     &__booking {
         background-image: url("../../assets/images/therapy-booking.jpg");
         @include mobile-hero-bg;
         padding: 1rem 2rem 4rem 2rem;
+        @include desktop-1280 {
+            background-image: url("../../assets/images/therapy-booking-desktop.jpg");
+            height: 100vh;
+            position: relative;
+        }
 
         &-title {
             text-align: right;
             align-self: flex-end;
             width: 10rem;
             margin-bottom: 2rem;
+            @include desktop-1280 {
+                text-align: center;
+                align-self: center;
+                width: 20rem;
+                line-height: 2.5rem;
+                margin-bottom: 3rem;
+            }
         }
 
         &-container {
@@ -60,6 +114,13 @@
 
         &-info {
             font-weight: 900;
+        }
+    }
+
+    &__bc {
+        @include desktop-1280 {
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
 }

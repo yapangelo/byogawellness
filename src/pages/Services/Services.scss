@@ -27,6 +27,10 @@
         @include desktop-1280 {
             background-image: url("../../assets/images/services-coaching-desktop.jpg")
         }
+
+        &-title--link {
+            @include default-transition-links;
+        }
     }
 
     &__yoga, &__coaching {
@@ -37,6 +41,9 @@
 
     &__yoga-container, &__coaching-container {
         width: 14.375rem;
+        @include desktop-1280 {
+            width: 20rem;
+        }
     }
 
     &__link {

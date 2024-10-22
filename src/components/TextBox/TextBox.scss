@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .textbox {
     background-color: rgba(#D7CEBA, .5) ;
     padding: .75rem 1rem 0 1rem;
@@ -7,4 +9,8 @@
         padding-bottom: .5rem;
         color: black;
     }
+
+    // @include desktop-1280 {
+    //     background-color: transparent;
+    // }
 }

@@ -6,6 +6,10 @@
         padding: 7.75rem 0;
         background-image: url("../../assets/images/training-hero.PNG");
         @include mobile-hero-bg;
+        @include desktop-1280 {
+            padding: 10rem 0;
+            height: 50vh;
+        }
 
         &-title {
         @include page-title-withgreybg;
@@ -17,6 +21,14 @@
 
         &-paragraph {
             padding: 1rem 0;
+            @include desktop-1280 {
+                width: 50%;
+                margin: auto;
+            }
         }
+    }
+
+    &__img {
+        padding: 4.5rem 0 0 0;
     }
 }
