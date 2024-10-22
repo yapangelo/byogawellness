@@ -5,9 +5,28 @@
     padding: 6rem 0 25rem 0;
     background-image: url("../../assets/images/coaching-hero.jpg");
     @include mobile-hero-bg;
+    @include desktop-1280 {
+        background-image: none;
+        @include page-title-withgreybg;
+        margin: 4.5rem 0 0 0;
+        padding: 2rem 0;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        padding-top: 4.5rem;
+        width: 100%;
+    }
 
     &__copy {
         margin: 2rem;
+        @include desktop-1280 {
+            width: 50%;
+            margin: 2rem auto 0 auto;
+        }
 
         &-list {
             list-style-type: disc;
@@ -27,6 +46,10 @@
 
     &__bundles {
         margin: 0 2rem 2rem 2rem;
+        @include desktop-1280 {
+            width: 50%;
+            margin: auto;
+        }
 
         &-title {
             text-align: center;
@@ -50,5 +73,9 @@
             font-weight:100;
             font-style: italic;
         }
+    }
+
+    &__section-container {
+        width: 100%;
     }
 }

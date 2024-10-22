@@ -21,7 +21,9 @@ const Services = () => {
       <section className="services__coaching">
         <div className="services__coaching-container">
           <Link to={"/coaching"} className="services__link">
-            <h1 className="services__coaching-title">WELLNESS COACHING</h1>
+            <h1 className="services__coaching-title services__coaching-title--link">
+              WELLNESS COACHING
+            </h1>
           </Link>
         </div>
       </section>
