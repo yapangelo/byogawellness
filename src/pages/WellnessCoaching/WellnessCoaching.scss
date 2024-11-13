@@ -19,6 +19,10 @@
     &__img {
         padding-top: 4.5rem;
         width: 100%;
+        display: none;
+        @include desktop-1280 {
+            display: block;
+        }
     }
 
     &__copy {
