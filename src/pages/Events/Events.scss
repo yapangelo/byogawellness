@@ -44,9 +44,15 @@
       
         &-container {
           display: flex;
-          gap: 2rem;
+          flex-direction: column;
           align-items: flex-start;
+          gap: 1rem;
           padding: 2rem;
+
+          @include desktop-1280 {
+            flex-direction: row;
+            gap: 2rem;
+          }
         }
       
         &-text {
