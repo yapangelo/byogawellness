@@ -35,6 +35,9 @@ const NavPopup = ({ closePopup }) => {
             </Link>
           </div>
         )}
+        <Link to={"/events"} onClick={handleLinkClick}>
+          <h1 className="navpopup__page">EVENTS</h1>
+        </Link>
         <Link to={"/about"} onClick={handleLinkClick}>
           <h1 className="navpopup__page">ABOUT</h1>
         </Link>
