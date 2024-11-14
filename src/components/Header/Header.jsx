@@ -26,6 +26,9 @@ const Header = () => {
         <Link to="/services">
           <li className="header__nav-li">Services</li>
         </Link>
+        <Link to="/events">
+          <li className="header__nav-li">Events</li>
+        </Link>
         <Link to="/about">
           <li className="header__nav-li">About</li>
         </Link>

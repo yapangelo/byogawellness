@@ -9,6 +9,7 @@ import YogaTherapy from "./pages/YogaTherapy/YogaTherapy";
 import TeacherTraining from "./pages/TeacherTraining/TeacherTraining";
 import StudioClasses from "./pages/StudioClasses/StudioClasses";
 import WellnessCoaching from "./pages/WellnessCoaching/WellnessCoaching";
+import Events from "./pages/Events/Events";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/training" element={<TeacherTraining />} />
         <Route path="/classes" element={<StudioClasses />} />
         <Route path="/coaching" element={<WellnessCoaching />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </BrowserRouter>
   );

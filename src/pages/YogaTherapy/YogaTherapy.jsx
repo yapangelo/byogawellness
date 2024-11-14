@@ -63,7 +63,11 @@ const YogaTherapy = () => {
       </section>
 
       <section className="therapy__booking">
-        <h1 className="therapy__booking-title">BOOK A YOGA THERAPY CLASS</h1>
+        <h1 className="therapy__booking-title">
+          BOOK A <br />
+          YOGA THERAPY <br />
+          SESSION
+        </h1>
         <div className="therapy__booking-container">
           <h2 className="therapy__booking-location">LOCAL HEALTH CLINIC</h2>
           <p className="therapy__booking-info">
