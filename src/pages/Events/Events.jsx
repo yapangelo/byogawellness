@@ -1,4 +1,4 @@
-import "./events.scss";
+import "./Events.scss";
 import Work1 from "../../assets/images/events-release-restore.svg";
 import Work2 from "../../assets/images/events-release-restore-reflect.svg";
 import Button from "../../components/Button/Button";
