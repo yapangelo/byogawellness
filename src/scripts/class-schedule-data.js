@@ -73,8 +73,18 @@ export const classScheduleData = [
     day: "Sun",
     details: [
       {
-        time: "12:00noon",
+        time: "8:30am",
         location: "Flow - YYoga Downtown",
+        link: "https://yyoga.ca/bc/book-a-class/?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48718",
+      },
+      {
+        time: "10:00am",
+        location: "Yin & Meditation - YYoga Downtown",
+        link: "https://yyoga.ca/bc/book-a-class/?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48718",
+      },
+      {
+        time: "12:00noon",
+        location: "Flow - YYoga Kits",
         link: "https://yyoga.ca/bc/book-a-class/?_mt=%2Fschedule%2Fdaily%2F48541%3Flocations%3D48717",
       },
     ],
